@@ -51,13 +51,17 @@ Flask'ın sunduğu basitlik ve esneklik, başlangıçtan ileri seviyeye kadar bi
 
 * `cd flask_digital_ocean_deploy_docker` komutunu çalıştırın.
 
-*  bash dosyasını çalıştırın: `bash deploy.sh`  Bu dosya docker kurulumu yapar.
+*  bash dosyasını çalıştırın: 
+    ```bash
+    docker.sh 
+    ```  
+   Bu komut docker kurulumu yapar.
 
 ### 6. Uygulamayı çalıştırın ve kontrol edin
 
 * docker ı build edin:
 ```bash
-docker build . flaskapp:1
+docker build . -t  flaskapp:1
  ```
 
 * docker ı çalıştırın:
